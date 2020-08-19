@@ -1,0 +1,104 @@
+package lab5;
+
+public class Statistics {
+
+	// Instance Variables
+	int[] lowScores = new int[5];
+	int[] highScores = new int[5];
+	float[] avgScores = new float[5];
+
+	// Default Constructor
+	public Statistics() {
+	}
+
+	//Methods Described in Assignment Description
+	public void findLow(Student[] a) {
+		for (int i = 0; i < 5; i++) {
+			int minValue = a[0].getScores()[i];
+			
+			for (int j = 1; j < 40 && a[j] != null; j++) {
+				if (a[j].getScores()[i] < minValue) {
+					minValue = a[j].getScores()[i];
+				}
+				lowScores[i] = minValue;
+			}
+		}
+	}
+
+
+	public void findHigh(Student[] a) {
+		for (int i = 0; i < 5; i++) {
+			int maxValue = a[0].getScores()[i];
+			
+			for (int j = 1; j < 40 && a[j] != null; j++) {
+				if (a[j].getScores()[i] > maxValue) {
+					maxValue = a[j].getScores()[i];
+				}
+				highScores[i] = maxValue;
+			}
+		}
+	}
+	
+	public void findAvg(Student[] a) {
+		for (int i = 0; i < 5; i++) {
+			int j = 0;
+			while (j < 40 && a[j] != null) {
+				avgScores[i] +=a[j].getScores()[i];
+				j++;
+			}
+			avgScores[i] = avgScores[i]/j;
+		}
+	}
+
+	//Add methods to print values of instance variables
+	public void printHighScores() {
+		System.out.printf("Highest Scores: ");
+		for (int i = 0; i < highScores.length; i++) {
+			System.out.printf("%d ", highScores[i]);
+		}
+		System.out.printf("\n");
+	}
+	
+	public void printLowScores() {
+		System.out.printf("Lowest Scores: ");
+		for (int i = 0; i < lowScores.length; i++) {
+			System.out.printf("%d ", lowScores[i]);
+		}
+		System.out.printf("\n");
+	}
+	
+	public void printAvgScores() {
+		System.out.printf("Average Scores: ");
+		for (int i = 0; i < avgScores.length; i++) {
+			System.out.printf("%.2f ", avgScores[i]);
+		}
+		System.out.printf("\n");
+	}
+
+	//Getters and Setters
+	public int[] getLowScores() {
+		return lowScores;
+	}
+
+	public void setLowScores(int[] lowScores) {
+		this.lowScores = lowScores;
+	}
+
+	public int[] getHighScores() {
+		return highScores;
+	}
+
+	public void setHighScores(int[] highScores) {
+		this.highScores = highScores;
+	}
+
+	public float[] getAvgScores() {
+		return avgScores;
+	}
+
+	public void setAvgScores(float[] avgScores) {
+		this.avgScores = avgScores;
+	}
+	
+	
+}
