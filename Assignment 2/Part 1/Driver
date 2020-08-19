@@ -1,0 +1,109 @@
+import java.util.Scanner;
+
+public class Driver1 {
+
+	public static void main(String[] args) {
+		System.out.println("--- Person 1 ---"); /** Instance 1*/
+		PersonalData person1 = createPersonalData();
+		System.out.println("Printing Person 1 ..."); 
+		person1.print();
+
+		System.out.println("\n--- Person 2 ---"); /** Instance 2*/
+		PersonalData person2 = createPersonalData();
+		System.out.println("Printing Person 2 ...");
+		person2.print();
+
+		System.out.println("\n--- Person 3 ---"); /** Instance 3*/
+		PersonalData person3 = createPersonalData();
+		System.out.println("Printing Person 3 ...");
+		person3.print();
+	}
+
+	/** Create a method to get the input Personal Data for more efficiency */
+	public static PersonalData createPersonalData() {
+		Scanner scanner = new Scanner(System.in); /** Create a Scanner for input */
+		System.out.printf("Enter name: "); 
+		String name = scanner.nextLine(); 
+		System.out.printf("Enter address: "); 
+		String address = scanner.nextLine(); 
+		System.out.printf("Enter age: "); 
+		int age = scanner.nextInt(); 
+		scanner.nextLine(); /** Skip the newline since nextInt does not read the new line. */
+		System.out.printf("Enter phone number: "); 
+		String phoneNumber = scanner.nextLine(); 
+		return new PersonalData(name, address, age, phoneNumber);
+	}
+}
+
+/* Test Run
+ 
+ Test Run 1
+--- Person 1 ---
+Enter name: Lily Doe
+Enter address: 1234 Mulberry Creek
+Enter age: 23
+Enter phone number: 408 234 5678
+Printing Person 1 ...
+Name: Lily Doe
+Address: 1234 Mulberry Creek
+Age: 23
+Phone Number: 408 234 5678
+
+--- Person 2 ---
+Enter name: Max Disker
+Enter address: 234567 Misky Drive
+Enter age: 56
+Enter phone number: 123 456 7890
+Printing Person 2 ...
+Name: Max Disker
+Address: 234567 Misky Drive
+Age: 56
+Phone Number: 123 456 7890
+
+--- Person 3 ---
+Enter name: Lorainne Ming
+Enter address: 23 West Full Creek, CA
+Enter age: 100
+Enter phone number: 408-234-9999
+Printing Person 3 ...
+Name: Lorainne Ming
+Address: 23 West Full Creek, CA
+Age: 100
+Phone Number: 408-234-9999
+
+
+Test Run 2
+--- Person 1 ---
+Enter name: Sam Hopkin
+Enter address: 1234 Wright St. 
+Enter age: 56
+Enter phone number: 408 923 4747
+Printing Person 1 ...
+Name: Sam Hopkin
+Address: 1234 Wright St. 
+Age: 56
+Phone Number: 408 923 4747
+
+--- Person 2 ---
+Enter name: Jeremias Matthews
+Enter address: 9089 Walsh Drive
+Enter age: 3
+Enter phone number: 408 390 0000
+Printing Person 2 ...
+Name: Jeremias Matthews
+Address: 9089 Walsh Drive
+Age: 3
+Phone Number: 408 390 0000
+
+--- Person 3 ---
+Enter name: Larry Manders
+Enter address: 56 Jacklin Drive 
+Enter age: 100
+Enter phone number: 408 349 2222
+Printing Person 3 ...
+Name: Larry Manders
+Address: 56 Jacklin Drive 
+Age: 100
+Phone Number: 408 349 2222
+
+*/
