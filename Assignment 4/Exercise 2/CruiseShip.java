@@ -1,11 +1,3 @@
-/*Rida Abdulwasay  
-CIS 35A Section 00450
-Assignment 4 Exercise 2 
-Due: 2/26/20
-Submitted: 2/26/20 */
-
-package Exercise_2;
-
 public class CruiseShip extends Ship {
 
 	// 5 Additional Instance variables
