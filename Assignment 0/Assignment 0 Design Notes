@@ -1,0 +1,23 @@
+Design Notes 
+
+
+Part 1: 
+	1.	Declare variables for input. - num_TV, num_VCR, num_RC, num_CD, num_TR 
+	2.	Import Scanner and prompt user for values for number of 
+	3.	Declare constants for unit price (use double for proper formatting of money: 400, 220, 35.20, 300, 150
+	4.	Declare variables for total price —TVP, VCRP, RCP, CDP, TRP
+	5.	Declare variables for unit price — TPTV, TPVCR, TPRC, TPCD, TPTR 
+	6.	Declare variables for subtotal, tax and total
+	7.	Use Subtotal = addition of all Total Prices
+	8.	Use Tax = 0.0825 + SubTotal
+	9.	Total = tax + subtotal  
+	10.	Format Table 
+
+Part 2:
+	1.	Import Scanner
+	2.	Declare variables for input—temp1, and then prompt user for input
+	3.	Declare variable Fahrenheit and use appropriate formula 
+	4.	Print out the Fahrenheit value
+	5.	Repeat steps 2-4 but with temp2 for input and output is Centigrade 
+
+Since this program is not that complex, executing the program is very simple; just run the main source code provided. 
