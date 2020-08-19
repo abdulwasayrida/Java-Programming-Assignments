@@ -1,0 +1,88 @@
+The following program I created/added on to is a program that reads a file that has data on 6 McDonald stores from the last 5 weeks. The program ins console-based, so the User can directly interact with it through the console. Once the program is run, the User will be welcomed and asked which store he/she wants to see data about. After the user types in the store and clicks enter, the program will display a menu. The user can input any of the following options. If he/she wants to exit the program, the user can enter 0 to quit and terminate it. The program will keep looping until 0 is selected from the Menu options.  
+
+I put my test runs as comments in my Driver Class.
+
+Design Notes 
+
+	1.	Need to create 5 classes (Mentioned in the lecture)
+      ⁃	Driver
+      ⁃	Store
+      ⁃	UserInterface (UI)
+      ⁃	FileIO
+      ⁃	Franchise
+	2.	Import the appropriate files
+	3.	In FileIO, do the line-by-line comments
+      ⁃	I turned of FileIO’s debugging program in order to have a more clear and easy-to-interact with program for the User (in the console)
+	4.	Franchise class and Salesdat.txt were provided by professor
+	5.	Needed to add more information to Store class
+
+
+Store Class: 
+
+	1.	In Store class, declare all the Instance Variables
+	2.	private double averageSalesForWeek;
+	3.	private double totalSaleForWeek;
+	4.	private double totalSalesForAllWeeks;
+	5.	private double averageWeeklySales;
+	6.	private int weekWithLowestSaleAmount;
+	7.	private int weekWithHighestSaleAmount;
+	8.	Make sure there is a default constructor Store()
+	9.	Generate the appropriate getters and setters (some provided by professor)
+	10.	Create the Business methods and add the appropriate calculations
+      ⁃	totalsalesforweek 
+      ⁃	avgsalesforweek 
+      ⁃	totalsalesforallweeks 
+      ⁃	averageweeklysales 
+      ⁃	weekwithhighestsaleamt
+      ⁃	weekwithlowestsaleamt
+	11.	Preload information into the memory using analyzeResults
+	    ⁃	use some of the previously declared instance variables and set them equal to their respective method. Meaning, the variable will equal to a call of the function.
+	12.	Create a print method that has the user’s choice as a parameter
+	13.	Use if statements to execute appropriate commands
+      ⁃	If statements will have choices 1 - 7 (defined in UserInterface class)
+      ⁃	If choice is > 7, system will print out that choice is not valid and will tell to try again.
+
+UserInterface Class: 
+
+	1.	Create a method called Menu which can be called in the Driver Class
+	2.	In Menu, create a new instance of FileIO and Franchise in order to read the data
+	3.	Import scanner for user input
+	4.	Ask user for which store, ask user for which option. 
+	5.	Use a do-while loop to keep displaying menu options
+      ⁃	Enter 1 for Total Sales For Each Week
+      ⁃	Enter 2 for Average Sales For Each Week
+      ⁃	Enter 3 for Total Sales For All Weeks
+      ⁃	Enter 4 for Average Weekly Sales
+      ⁃	Enter 5 for Week with the Highest Amount in Sales
+      ⁃	Enter 6 for Week with the Lowest Amount in Sales
+      ⁃	Enter 7 for All Analytical Data
+      ⁃	Enter 0 to Quit
+	5.	Keep looping while choice is not 0. If choice is not 0, then create a new instance of franchise and get the store. 
+	6.	Then, call the print method from store and execute according to the choice inputted. 
+	7.	Case for choice > 7 is covered in Store class print method
+	8.	If choice is 0, then print exiting message.
+
+Franchise Class:
+
+	1.	Provided by professor
+	2.	Creates stores
+	3.	Has getters and setters
+
+FileIO Class:
+
+	1.	Provided by professor
+	2.	Put Line-by-line comments
+
+Driver Class:
+
+	1.	Has Main
+	2.	creates a new Instance of FileIO called a1 which reads the Salesdat.txt  
+	3.	Creates a new Franchise that reads the data in Salesdat.txt
+	4.	Create a new instance of UserInterface class called UI
+	5.	Run null check (mentioned in the Lecture)  on stores
+	6.	If stores are not null, then call UserInterface method Menu. 
+	7.	Has comments which have test runs.
+
+Extraneous Comments:
+
+The main method is in the driver class, so the Driver class must be run. The Driver class calls onto to UserInterface, Store, Franchise, and FileIO class. The UserInterface class calls, the FileIO, Franchise, and Store class and executes methods from the store class. The FileIO class is used to read data from the Salesdat.txt file provided by the professor. The Franchise class creates franchises of the McDonald stores.
