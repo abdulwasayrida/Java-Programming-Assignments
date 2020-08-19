@@ -1,0 +1,19 @@
+public class Driver2 {
+
+	public static void main(String[] args) {
+
+		Coin quarter = new Coin(); 
+		Coin dime = new Coin(); 
+		Coin nickel = new Coin(); 
+		Simulation s1 = new Simulation();
+		
+		System.out.printf("Now Tossing the Quarter...\n");
+		s1.simulationToss(quarter);
+		System.out.printf("\nNow Tossing the Dime...\n");
+		s1.simulationToss(dime);
+		System.out.printf("\nNow Tossing the Nickel...\n");
+		s1.simulationToss(nickel);
+
+	}
+
+}
