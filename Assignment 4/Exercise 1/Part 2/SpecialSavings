@@ -1,0 +1,31 @@
+package Exercise_1_Part_2;
+import Exercise_1_Part_1.SavingsAccount;
+
+
+public class SpecialSavings extends SavingsAccount{
+
+		//Default Constructor
+	
+		public SpecialSavings () {
+			super(); //Call superclass methods
+		} 
+		public SpecialSavings (double savingsBalance) {
+			super(savingsBalance);
+		}
+		
+		//Overridden Method
+		public void calculateMonthlyInterest() {
+			if (getSavingsBalance() > 10000) {
+				monthlyInterest = (savingsBalance * 10 / 1200); 
+			}
+			else {
+				monthlyInterest = (savingsBalance * 4 / 1200); //Mentions in Assignment 4 Info that other interest rate is 4%
+			}
+			super.setMonthlyInterest(monthlyInterest);
+			super.deposit(monthlyInterest);
+		}
+		
+
+		
+	}
+
