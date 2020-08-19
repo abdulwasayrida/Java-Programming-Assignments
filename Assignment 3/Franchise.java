@@ -1,9 +1,3 @@
-/* Rida Abdulwasay 
-CIS 35A Section 00450
-Assignment 3 
-Due: 2/14/20
-Submitted: 2/14/20 */
-
 public class Franchise { //Franchise contains stores
 	private Store stores[]; 
 	
