@@ -1,9 +1,3 @@
-/* Rida Abdulwasay 
-CIS 35A Section 00450
-Assignment 3 
-Due: 2/14/20
-Submitted: 2/14/20 */
-
 public class Store {
 	private float salesByWeek[][]; // Each store contains 2-dimensional array
 //	private float totalSalesPerWeek[];// what to do with it?
