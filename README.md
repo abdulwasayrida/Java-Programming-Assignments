@@ -1,1 +1,1 @@
-# CIS-35A---Java-Sukhjit-Singh-
+# CIS-35A-Java
