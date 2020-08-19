@@ -1,0 +1,17 @@
+public class Simulation {
+	
+	/** Default Constructor*/ 
+	Simulation() { }
+	
+	public void simulationToss (Coin c) {
+		Coin coin = new Coin();
+		for (int i = 0; i < 20; i++) {
+			coin.toss(); //Use this to toss the coin
+			coin.checkToss(); //Use this to count how many times Heads or Tails appears
+		}
+		
+		System.out.printf("Total Heads = %d\nTotal Tails = %d\n", coin.getHeadsCount(), coin.getTailsCount());
+	}
+
+}
+	
