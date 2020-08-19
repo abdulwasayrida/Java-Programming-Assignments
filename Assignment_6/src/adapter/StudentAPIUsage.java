@@ -1,9 +1,3 @@
-/*Rida Abdulwasay       
-CIS 35A Section 00450
-Assignment 6
-Due: 3/21/20
-Submitted:3/21/20 */
-
 package adapter;
 
 import exception.StudentGradingException;
