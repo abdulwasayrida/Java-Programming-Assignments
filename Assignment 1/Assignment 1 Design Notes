@@ -1,0 +1,39 @@
+Design Notes 
+
+
+Part 1: 
+	1.	Import scanner, create a variable called loan, and ask user for loan amount.
+	2.	Create a variable for yeas and ask user for number of years.
+	3.	Create a variable for interest rate and ask user for the interest rate.
+	4.	Calculate monthlyInterestRate by using this formula
+        — annualRate / 1200
+	      ⁃	monthlyInterestRatet is (annual rate / 100) / 12 = annual rate / 1200. 
+	5.	Calculate monthly payment using formula:   
+	      ⁃	need to use math.pow() since number is raised to a power 
+	      ⁃	monthlyPayment = loan * monthlyInterestRate / (1 - 1 / Math.pow(1 + monthlyInterestRate, years * 12))
+	6.	Calculate total payment
+	    ⁃	total payment = monthly payment * number of years * 12
+	7.	Display table and format appropriately—calculate appropriate items
+	    ⁃	declare variables for interest and principal
+      ⁃	create a loop to print out values
+      ⁃	Use below formulas: 
+      ⁃	interest = monthlyInterestRate * loan
+      ⁃	principal = monthlyPayment - interest
+      ⁃	loan = loan - principal 
+      ⁃	format table using \t and %/2f 
+
+Part 2: 
+
+Need to: 
+	▪	Need to approximate square root of a number
+	▪	Need to create a method that is of type double called sqrt
+
+	1.	Ask user to input number n
+	2.	Use scanner to read input and store value
+	3.	Call method names sqrt—use public static double sqrt(long n)—provided in the question 
+	4.	Use a while loop 
+      ⁃	set initial guess to 1 (use it as the first “lastGuess”)
+      ⁃	use formula nextGuess = (lastGuess + n / lastGuess) / 2 
+      ⁃	keep looping until the difference between nextGuess and lastGuess is less than 0.0001, then return value
+      ⁃	use double to format decimal
+      ⁃	use absolute value function for precision 
