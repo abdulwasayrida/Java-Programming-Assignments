@@ -1,11 +1,3 @@
-
-//Rida Abdulwasay 
-//CIS 35A  Section 00450
-//Assignment 0 
-//Part 2
-//Due: 1/15/20
-//Submitted: 1/14/20
-
 import java.util.Scanner; 
 public class Part2_Assignment_0 {
 
