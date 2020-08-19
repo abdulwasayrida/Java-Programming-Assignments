@@ -1,0 +1,60 @@
+package Exercise_1_Part_2;
+public class Driver2 {
+
+	public static void main(String[] args) {
+		SpecialSavings saver1 = new SpecialSavings(2000.00);
+		SpecialSavings saver2 = new SpecialSavings(3000.00); 
+		System.out.printf("The Balance for Saver1 is currently $%.2f\n", saver1.getSavingsBalance());
+		System.out.printf("The Balance for Saver2 is currently $%.2f\n", saver2.getSavingsBalance());
+		System.out.println(); 
+
+		//Deposit
+		saver1.deposit(1000.00); 
+		saver2.deposit(2000.00);
+		System.out.printf("$1000.000 has been deposited in Saver1's account\n"); 
+		System.out.printf("$2000.000 has been deposited in Saver2's account\n"); 
+		System.out.println(); 
+		
+		//Print Savings Balance
+		System.out.printf("The New Balance in Saver1's Account is %.2f\n", saver1.getSavingsBalance()); 
+		System.out.printf("The New Balance in Saver2's Account is %.2f\n", saver2.getSavingsBalance()); 
+		System.out.println(); 
+		
+		
+		//Withdraw
+		saver1.withdraw(3000.00); 
+		saver2.withdraw(4000.00);
+		System.out.printf("$3000.000 has been withdrawn from Saver1's account\n"); 
+		System.out.printf("$4000.00 has been withdrawn from Saver2's account\n"); 
+		System.out.println(); 
+		
+		//Print Savings Balance
+		System.out.printf("The New Balance in Saver1's Account is $%.2f\n", saver1.getSavingsBalance()); 
+		System.out.printf("The New Balance in Saver2's Account is $%.2f\n", saver2.getSavingsBalance()); 
+		System.out.println(); 
+		
+		saver1.deposit(900.00); 
+		saver2.deposit(9500.00);
+		System.out.printf("$900.00 has been withdrawn from Saver1's account\n"); 
+		System.out.printf("$9500.00 has been deposited in Saver2's account\n"); 
+		System.out.println(); 
+		
+		//Print Savings Balance
+		System.out.printf("The New Balance in Saver1's Account is $%.2f\n", saver1.getSavingsBalance()); 
+		System.out.printf("The New Balance in Saver2's Account is $%.2f\n", saver2.getSavingsBalance()); 
+		System.out.println(); 
+		
+		//Calculate the New Monthly Interest
+		saver1.calculateMonthlyInterest(); //Saver1 should have 4% Interest
+		saver2.calculateMonthlyInterest(); //Saver2 should have 10% Interest
+		
+		//Print out the Results
+		System.out.printf("-------------------------------------------------------\n");
+		System.out.printf("The New Monthly Interest Earned for Saver1 is $%.2f\n", saver1.getMonthlyInterest());
+		System.out.printf("The New Monthly Interest Earned for Saver2 is $%.2f\n", saver2.getMonthlyInterest());
+		System.out.println();
+		System.out.printf("The New Balance in Saver1's Account is $%.2f\n", saver1.getSavingsBalance()); 
+		System.out.printf("The New Balance in Saver2's Account is $%.2f\n", saver2.getSavingsBalance());
+	}
+
+}
