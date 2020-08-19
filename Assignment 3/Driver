@@ -1,0 +1,16 @@
+public class Driver {
+	
+	public static void main(String[] args) {
+
+		FileIO a1 = new FileIO("/Users/abdulwasayrida/eclipse-workspace/Assignment_3/src/Salesdat.txt");
+		Franchise franchise = a1.readData(); 
+		Store store = franchise.getStores(5);
+		
+		UserInterface UI = new UserInterface(); 
+		
+		if(store!=null) {
+			UI.Menu();  
+		}
+	}
+
+	}
