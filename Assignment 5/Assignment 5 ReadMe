@@ -1,0 +1,22 @@
+ReadME:
+
+For the following Lab Assignment, I created a program that performs a statistical
+analysis of scores for a class of students. I created 2 packages—one for the Driver, and
+one for the other classes. In the Driver package, I called the functions from the other
+package (titled lab5) and used the print methods to print the analytical data.
+In the package called lab5, I created 3 classes—one for Statistics, one for the Util
+(reading the Test File), and one for the Student. In the Statistics class, I had methods to
+find the high, low, and average scores as well as print methods. In the Util class, I
+created a FileIO code to read the data with the student quiz grades. In the Student class,
+I declared variables such as Student ID (SID) and an array to hold the scores. I also
+included print methods to print out the information.
+In the package called Driver, I created a class called Driver in which I imported the lab5
+package and included a welcome message and a new Util object. I then populated the
+student array with the test scores, and called the appropriate methods to find and print
+the Highest scores, the Lowest scores, and the Average scores.
+
+Comments:
+For this assignment, the Driver class in the package Driver must be run. It is important to
+note that the other package must be imported in order for the code to function smoothly.
+Personally, I find it easier to import a whole package (as seen in my Util class) rather
+than individual methods since it gives a better access to more resources.
