@@ -1,0 +1,31 @@
+public class Driver {
+
+	public static void main(String[] args) {
+
+		Ship ship[] = new Ship[3];
+
+		// Create a Regular Ship
+		ship[0] = new Ship("Mayflower", "England", "King James", false, 500, 400, 600, 800, "March 28th, 1678",
+				"June 12th, 1679", 3, 9);
+
+		// Create a Cargo Shop
+		ship[1] = new CargoShip("Lotus", "France", "George Franz", true, 200, 900, 500, 900, "April 1st, 1998",
+				"August 7th, 1999", 2, 12, "Crates", "Dock", 5, false, 19283920);
+
+		// Create a Cruise Ship
+		String[] services = { "Pool", "Cards", "Golf", "Theater", "Board Games" }; //Define Services
+		ship[2] = new CruiseShip("Red Dragon", "Britain", "Earl of Cumberland", true, 1200, 500, 100, 700,
+				"January 3rd, 1595", "December 8th, 1596", 12, 9, 200, 1500, "Seafood, Escargot, and Roast", services, "Expensive");
+
+		//Print out the Data
+		System.out.printf("\n=============== SHIP 1 ================"); 
+		ship[0].print();
+		
+		System.out.printf("\n\n=============== SHIP 2 ================"); 
+		ship[1].print();
+		
+		System.out.printf("\n\n=============== SHIP 3 ================"); 
+		ship[2].print();
+	}
+
+}
