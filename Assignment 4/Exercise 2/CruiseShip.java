@@ -1,3 +1,5 @@
+package Exercise_2;
+
 public class CruiseShip extends Ship {
 
 	// 5 Additional Instance variables
