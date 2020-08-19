@@ -1,10 +1,3 @@
-
-/* Rida Abdulwasay 
-CIS 35A Section 00450
-Assignment 3 
-Due: 2/14/20
-Submitted: 2/14/20 */
-
 import java.util.Scanner;
 
 public class UserInterface {
