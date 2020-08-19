@@ -1,5 +1,4 @@
-package Exercise_1;
-
+package Exercise_1_Part_1;
 public class SavingsAccount {
 
 	//Declare Instance Variables
