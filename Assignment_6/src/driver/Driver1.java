@@ -1,19 +1,9 @@
-/*Rida Abdulwasay       
-CIS 35A Section 00450
-Assignment 6
-Due: 3/21/20
-Submitted:3/21/20 */
-
 package driver;
 
 import exception.StudentGradingException;
 import model.*;
 
 public class Driver1 {
-	// Important: This is the driver from lab 5!!!
-	// In this driver, I've healed the file not found exception
-	// I've also healed 2 null pointer exceptions (missing student and missingscore)
-
 	public static void main(String[] args) {
 		System.out.printf("Welcome to the De Anza Student ID System\n\n");
 		Student students[] = new Student[40];
