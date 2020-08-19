@@ -19,5 +19,5 @@ Part 2:
 	3.	Declare variable Fahrenheit and use appropriate formula 
 	4.	Print out the Fahrenheit value
 	5.	Repeat steps 2-4 but with temp2 for input and output is Centigrade 
-
+ 
 Since this program is not that complex, executing the program is very simple; just run the main source code provided. 
