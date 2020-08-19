@@ -1,0 +1,70 @@
+import java.util.Random; //Import this for the randomness of the coin toss
+
+public class Coin {
+
+	/** Instance Variables */
+	private String sideUp;
+	private int headsCount;
+	private int tailsCount;
+
+	/** no-args default Constructor */
+	public Coin() {
+		Random r = new Random();
+		int sideup = r.nextInt(2); // find random value to determine what value sideUp holds
+		if (sideup == 0)
+			sideUp = "HEADS"; // sideUp field holds Heads
+		else
+			sideUp = "TAILS"; // sideUp field holds Tails
+	}
+
+	/** Void Method named toss...uses same logic as Coin default constructor */
+	public void toss() {
+	 	Random coin = new Random();
+		int sideup = coin.nextInt(2); // find random value to determine what value sideUp holds
+		if (sideup == 0)
+			sideUp = "HEADS"; // sideUp field holds Heads
+		else
+			sideUp = "TAILS"; // sideUp field holds Tails
+		System.out.println(sideUp); //print out which value the side up has
+	}
+
+	
+
+public void checkToss() //Track the count of heads or tails.
+{
+	if (getSideUp().equals("HEADS"))
+		this.headsCount++;
+	else
+		this.tailsCount++;
+	
+}
+
+	/** Method named getSideUp (also part of Getters and Setters) */
+	public String getSideUp() {
+		return sideUp;
+	}
+
+
+/** Generate Getters and Setters*/ 
+
+public int getHeadsCount() {
+	return headsCount;
+}
+
+public void setHeadsCount(int headsCount) {
+	this.headsCount = headsCount;
+}
+
+public int getTailsCount() {
+	return tailsCount;
+}
+
+public void setTailsCount(int tailsCount) {
+	this.tailsCount = tailsCount;
+}
+
+public void setSideUp(String sideUp) {
+	this.sideUp = sideUp;
+} 
+
+} 
