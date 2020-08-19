@@ -1,14 +1,7 @@
-/*Rida Abdulwasay       
-CIS 35A Section 00450
-Assignment 6
-Due: 3/21/20
-Submitted:3/21/20 */
-
 package model;
 
 import java.io.*;  
 import java.util.*;
-// I had to import the exception StudentGradingException
 import exception.StudentGradingException;
 
 public class Util {
