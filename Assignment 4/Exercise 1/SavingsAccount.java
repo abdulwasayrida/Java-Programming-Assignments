@@ -1,11 +1,3 @@
-/*Rida Abdulwasay  
-CIS 35A Section 00450
-Assignment 4 Exercise 1 Part 1 
-Due: 2/26/20
-Submitted: 2/6/20 */
-
-package Exercise_1_Part_1;
-
 public class SavingsAccount {
 
 	//Declare Instance Variables
