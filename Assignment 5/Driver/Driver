@@ -1,0 +1,89 @@
+package Driver;
+import lab5.*;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		System.out.printf("Welcome to the De Anza Student Information System!\n\n");
+		Student students[] = new Student[40];
+		Util util = new Util();
+		
+		//Populate the Student Array
+		students = util.readFile("/Users/abdulwasayrida/eclipse-workspace/Assignment_5/src/StudentData.txt", students);
+		for (int i = 0; i < students.length && students [i] != null; i++) {
+			students[i].printSID();
+			students[i].printScores();
+			System.out.printf("\n");
+		}
+		
+		//Calculate and Print the Highest Score
+		Statistics statistics = new Statistics();
+		statistics.findHigh(students);
+		statistics.printHighScores();
+		
+		//Calculate and Print the Lowest Score
+		statistics.findLow(students);
+		statistics.printLowScores();
+		
+		//Calculate and Print the Average Score
+		statistics.findAvg(students);
+		statistics.printAvgScores();
+	}
+}
+
+/** 
+
+Test Run
+
+Welcome to the De Anza Student Information System!
+
+Student ID: 1234
+Scores: 52 7 100 78 34 
+
+Student ID: 2134
+Scores: 90 36 90 77 30 
+
+Student ID: 3124
+Scores: 100 45 20 90 70 
+
+Student ID: 4532
+Scores: 11 17 81 32 77 
+
+Student ID: 5678
+Scores: 20 12 45 78 34 
+
+Student ID: 6134
+Scores: 34 80 55 78 45 
+
+Student ID: 7874
+Scores: 60 100 56 78 78 
+
+Student ID: 8026
+Scores: 70 10 66 78 56 
+
+Student ID: 9893
+Scores: 34 9 77 78 20 
+
+Student ID: 1947
+Scores: 45 40 88 78 55 
+
+Student ID: 2877
+Scores: 55 50 99 78 80 
+
+Student ID: 3189
+Scores: 22 70 100 78 77 
+
+Student ID: 4602
+Scores: 89 50 91 78 60 
+
+Student ID: 5405
+Scores: 11 11 0 78 10 
+
+Student ID: 6999
+Scores: 0 98 89 78 20 
+
+Highest Scores: 100 100 100 90 80 
+Lowest Scores: 0 7 0 32 10 
+Average Scores: 46.20 42.33 70.47 75.67 49.73 
+
+*/
