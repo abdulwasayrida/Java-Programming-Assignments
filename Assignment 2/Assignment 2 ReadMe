@@ -4,18 +4,18 @@ Part 1:
 	1.	New package
 	2.	Import Scanner
 	3.	Create a public class named PersonalData for a person with the following instance variables
-      ⁃	name: private string
-      ⁃	address: private string
-      ⁃	age: private integer
-      ⁃	phone number: private integer 
-      ⁃	create the getters and setters
-      ⁃	create a default constructor as well as the overloaded constructor
-      ⁃	create a print method in the class which can be invoked in the driver for each object
+		      ⁃	name: private string
+		      ⁃	address: private string
+		      ⁃	age: private integer
+		      ⁃	phone number: private integer 
+		      ⁃	create the getters and setters
+		      ⁃	create a default constructor as well as the overloaded constructor
+		      ⁃	create a print method in the class which can be invoked in the driver for each object
 	4.	Create a Driver class (holds the main method)
-      ⁃	use scanner for input
-      ⁃	use methods to read values from scanner
+		      ⁃	use scanner for input
+		      ⁃	use methods to read values from scanner
 	5.	3 instances of a class
-      ⁃	Person 1, Person 2, Person 3
+	     	 ⁃	Person 1, Person 2, Person 3
 
 Extraneous Comments:
 
@@ -26,34 +26,34 @@ Part 2:
 	1.	New package
 	2.	Import Random
 	3.	Create a class called coin
-      ⁃	instance variable sideUp—string 
-      ⁃	headsCount—int to keep track
-      ⁃	tailsCount —int to keep track
-      ⁃	methods:
-      ⁃	Coin—default constructor/ no-arg constructor which randomly determines the side of the coin
-      ⁃	use if-else statements for heads and tails
-      ⁃	seed is 2 for random
-      ⁃	toss—heads or tails, sets sideUp accordingly
-      ⁃	same logic as Coin()
-      ⁃	prints out the value of the toss (i.e Heads or Tails)
-      ⁃	checkToss—sees how many heads or tails
-      ⁃	use if-else statements
-      ⁃	use getSideUp.equal for the string
-      ⁃	generate getters and setters
-      ⁃	getSideUp which returns value of sideUp field
+		      ⁃	instance variable sideUp—string 
+		      ⁃	headsCount—int to keep track
+		      ⁃	tailsCount —int to keep track
+		      ⁃	methods:
+		      ⁃	Coin—default constructor/ no-arg constructor which randomly determines the side of the coin
+		      ⁃	use if-else statements for heads and tails
+		      ⁃	seed is 2 for random
+		      ⁃	toss—heads or tails, sets sideUp accordingly
+		      ⁃	same logic as Coin()
+		      ⁃	prints out the value of the toss (i.e Heads or Tails)
+		      ⁃	checkToss—sees how many heads or tails
+		      ⁃	use if-else statements
+		      ⁃	use getSideUp.equal for the string
+		      ⁃	generate getters and setters
+		      ⁃	getSideUp which returns value of sideUp field
 	4.	 Create a class called Simulation
-      ⁃	default constructor Simulation()
-      ⁃	method called simulationToss 
-      ⁃	takes in a Coin
-      ⁃	uses for loop to loop 20 times 	
-      ⁃	uses toss from Coin class 
-      ⁃	uses checkToss from Coin class to see how many Heads and how many Tails
-      ⁃	prints out total value of Heads and Tails in the end using getters from Coin class
+		      ⁃	default constructor Simulation()
+		      ⁃	method called simulationToss 
+		      ⁃	takes in a Coin
+		      ⁃	uses for loop to loop 20 times 	
+		      ⁃	uses toss from Coin class 
+		      ⁃	uses checkToss from Coin class to see how many Heads and how many Tails
+		      ⁃	prints out total value of Heads and Tails in the end using getters from Coin class
 	5.	Create Driver2
-      ⁃	in Driver2, create a new coin objects called quarter, dime, and nickel
-      ⁃	create a new simulation object called s1
-      ⁃	use the simulationToss method from Simulation class and pass each type of coin into the parameters respectively 
-      ⁃	meaning 1 simulationToss for quarter, one for dime, one for nickel
+		      ⁃	in Driver2, create a new coin objects called quarter, dime, and nickel
+		      ⁃	create a new simulation object called s1
+		      ⁃	use the simulationToss method from Simulation class and pass each type of coin into the parameters respectively 
+		      ⁃	meaning 1 simulationToss for quarter, one for dime, one for nickel
 
 Extraneous Comments:
 
